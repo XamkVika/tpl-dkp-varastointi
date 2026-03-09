@@ -44,14 +44,14 @@ pip install -r requirements.txt
 4. To test and run your code, just run the `main.py`. Make sure that you have the correct Python environment in use. You can check the database file content with for example SQLite Viewer VS Code extension.
 
 Print should look like this
-´´´
+```
                     title               author  pages
 0           War and Peace          Leo Tolstoy   1225
 1             Don Quixote  Miguel de Cervantes   1072
 2  The Brothers Karamazov    Fyodor Dostoevsky    824
 3                 Ulysses          James Joyce    730
 4    Crime and Punishment    Fyodor Dostoevsky    671
-´´´
+```
 
 5. In this project and GitHub Classroom assignment we are using also tests. You can run the tests in the cmd in the project root with:
 `python -m pytest`
