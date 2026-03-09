@@ -1,7 +1,7 @@
+#TODO: import pandas
 from db.database import create_db, add_data, query_data
 
-if __name__ == "__main__":
-    # TODO: 1. Call create_db() to initialize the database
+def main():
 
     books = {
         "War and Peace": {"author": "Leo Tolstoy", "pages": 1225},
@@ -16,7 +16,13 @@ if __name__ == "__main__":
         "Pride and Prejudice": {"author": "Jane Austen", "pages": 279}
     }
 
-    # TODO: 2. Call add_data() function with books a parameter to insert the books into the database
+    # TODO: 1. Call create_db() to initialize the database
 
-    # TODO: 3. Call query_data() to fetch 5 first books in to a variable
-    # print the results in a for loop
+    # TODO: 2. Call add_data() function with books as a parameter to insert the books into the database
+
+    # TODO: 3. Call query_data() to fetch 5 first books in to a dataframe with columns: title, author, pages
+    # print the dataframe to the console
+
+
+if __name__ == "__main__":
+    main()

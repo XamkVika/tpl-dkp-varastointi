@@ -1,4 +1,4 @@
-import sqlite3
+#TODO: Import sqlite3
 from pathlib import Path
 
 DB_PATH = Path("sqlite_books.db")
@@ -26,7 +26,7 @@ def add_data(books_dict):
       - Iterates through the dictionary {title: {author, pages}}
       - Inserts each book into the 'books' table
       - Commits changes and closes the connection
-    Example insert:
+    Example insert (doesn't handle duplicates, just for reference):
         cursor.execute(
             "INSERT INTO books (title, author, pages) VALUES (?, ?, ?)",
             (title, info["author"], info["pages"])
@@ -35,7 +35,6 @@ def add_data(books_dict):
       - Remove the "pass", it's just to avoid syntax errors for now
     """
     pass
-
 
 def query_data(limit):
     """

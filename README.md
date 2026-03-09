@@ -41,9 +41,16 @@ pip install -r requirements.txt
 
 3. Open main.py and database.py and follow the detailed tasks inside the files.
 
-4. To test and run your code, just run the `main.py`. Make sure that you have the correct Python environment in use.
+4. To test and run your code, just run the `main.py`. Make sure that you have the correct Python environment in use. You can check the database file content with for example SQLite Viewer VS Code extension.
 
 5. In this project and GitHub Classroom assignment we are using also tests. You can run the tests in the cmd in the project root with:
 `python -m pytest`
+
+✅ test_add_data_inserts_books_correctly: Verifies data insertion using the temp database
+✅ test_add_data_empty_dict: Checks empty data handling
+✅ test_query_data_returns_correct_books_ordered_by_pages: Verifies correct ordering
+✅ test_query_data_with_limit_greater_than_available: Tests large limits
+✅ test_query_data_with_limit_zero: Tests limit=0 edge case
+✅ test_query_data_on_empty_database: Tests empty database queries
 
 6. Commit and push your changes to this repository.
